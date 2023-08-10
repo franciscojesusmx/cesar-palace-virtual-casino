@@ -22,3 +22,18 @@ def card_value(card):
         return 11
     else:
         return int(value)
+    
+def calculate_hand_sum(hand):
+    total = sum(card_value(card) for card in hand)
+    # Adjust the value of Ace if needed (to avoid exceeding 21)
+    for card in hand:
+        if card[1] == 'ace' and total > 21:
+            total -= 10
+    return total
+
+def crupier_hand(cards):
+    hand = []
+    while calculate_hand_sum(hand) < 17:   #Rule in the casinos: the crupier takes cards to 17 o more
+        hand.append(random.choice(cards))
+    return hand
+
