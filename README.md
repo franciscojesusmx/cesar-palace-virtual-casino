@@ -5,6 +5,26 @@
 
 ## Setting Up the 'casino_venv' Virtual Environment
 
+Before you begin, please ensure that you have the `venv` module installed. The `venv` module is included in the standard library for Python 3.3 and later versions. If you're using an earlier version of Python, you may need to install it separately.
+
+To check if you have the `venv` module installed, open a terminal and execute the following command:
+
+```bash
+python3 -m venv --help
+```
+
+If you receive a help message for the `venv` module, you're all set. If not, you can install it using the following command:
+
+```bash
+pip install virtualenv
+```
+
+Once you have the `venv` module installed, you can proceed with creating and using the 'casino_venv' virtual environment as described below.
+
+
+
+## Setting Up the 'casino_venv' Virtual Environment
+
 The 'casino_venv' virtual environment is used to isolate and manage project-specific dependencies for our casino-related project. Below are instructions on how to create and activate this virtual environment.
 
 ### Creating the Virtual Environment
@@ -49,4 +69,3 @@ Please note that while working in the 'casino_venv' virtual environment, any dep
 
 ---
 
-Please make sure to customize the text according to your needs and include any other relevant information for your documentation.
