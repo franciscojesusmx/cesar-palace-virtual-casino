@@ -1,5 +1,11 @@
 # cesar-palace-virtual-casino
 
+## Notes and bugs:
+
+-Blackjack game don't show who whin the match
+-The sum after player or dealer takes other card is broken
+-We will be adding a virtual coin system for betting, allowing players to place bets and earn rewards.
+
 
 ---
 
