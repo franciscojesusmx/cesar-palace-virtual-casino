@@ -1,8 +1,10 @@
 import random
 
+# Define the suits and ranks for the card deck
 SUITS = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
 RANKS = ['as', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
 
+# Function to create a deck of cards
 def create_card(): 
     card = []
     for suit in SUITS:
@@ -10,10 +12,12 @@ def create_card():
             card.append((suit, rank))
     return card
 
+# Function to get a hand of cards
 def get_hand(cards, size_hand=2):
     hand = random.sample(cards, size_hand)
     return hand
 
+# Function to determine the value of a card
 def card_value(card):
     value = card[1]
     if value in ['J', 'Q', 'K']:
@@ -23,6 +27,7 @@ def card_value(card):
     else:
         return int(value)
     
+# Function to calculate the sum of a hand
 def calculate_hand_sum(hand):
     total = sum(card_value(card) for card in hand)
     # Adjust the value of Ace if needed (to avoid exceeding 21)
@@ -31,18 +36,21 @@ def calculate_hand_sum(hand):
             total -= 10
     return total
 
+# Function for the crupier's behavior to get a hand of cards
 def crupier_hand(cards):
     hand = []
     while calculate_hand_sum(hand) < 17:   # Rule in the casinos: the crupier takes cards to 17 or more
         hand.append(random.choice(cards))
     return hand
 
+# Function to display a player's or crupier's cards
 def display_cards(cards, title):
     print(f"{title} Cards:")
     for card in cards:
         print(f"{card[1]} of {card[0]}")
     print("")
 
+# Function to handle a user's decision to take additional cards
 def user_hit(cards, deck):
     while True:
         choice = input("Do you want another card? (yes/no): ")
@@ -56,6 +64,7 @@ def user_hit(cards, deck):
         else:
             break
 
+# Main function to simulate the blackjack game
 def blackjack():
     cards = create_card()
 
@@ -80,4 +89,5 @@ def blackjack():
     display_cards(crupier_cards, "Crupier")
     print(f"Sum: {calculate_hand_sum(crupier_cards)}\n")
 
+# Run the blackjack game
 blackjack()
