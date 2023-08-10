@@ -69,3 +69,14 @@ Please note that while working in the 'casino_venv' virtual environment, any dep
 
 ---
 
+## Games rules
+
+## Blackjack
+
+1. The goal of the game is to have a hand value closer to 21 than the dealer's hand, without exceeding 21.
+2. Number cards (2-10) are worth their face value, face cards (J, Q, K) are worth 10, and an Ace (A) can be worth 1 or 11, whichever is more favorable.
+3. At the start, the player and the dealer each receive two cards. The player's cards are dealt face up, while one of the dealer's cards is face up (known as the "face-up card") and the other is face down.
+4. The player can choose to "hit" (draw another card) or "stand" (keep the current hand). The player can continue to hit until they stand or their hand value exceeds 21 (resulting in a "bust").
+5. After the player completes their turn, the dealer reveals their face-down card.
+6. The dealer must hit until their hand value reaches at least 17. If the dealer's hand exceeds 21, the player wins.
+7. If neither the player nor the dealer busts, the one with the hand value closest to 21 wins. In case of a tie, it's a push (a tie), and no one wins or loses.
