@@ -88,3 +88,23 @@ Please note that while working in the 'casino_venv' virtual environment, any dep
 5. After the player completes their turn, the dealer reveals their face-down card.
 6. The dealer must hit until their hand value reaches at least 17. If the dealer's hand exceeds 21, the player wins.
 7. If neither the player nor the dealer busts, the one with the hand value closest to 21 wins. In case of a tie, it's a push (a tie), and no one wins or loses.
+
+## Roulette
+
+Roulette is a classic casino game where players predict the outcome of a spinning wheel. In this simplified version, players predict both the winning number and its color.
+
+Basic Gameplay:
+
+Players place bets on the roulette table before the wheel is spun.
+The roulette wheel consists of numbered pockets, ranging from 0 to 36, with alternating colors of red and black.
+
+The wheel is set spinning in one direction, while a ball is spun in the opposite direction.
+
+Once the wheel and ball lose momentum, the ball lands in a numbered pocket, determining the winning number and color.
+Types of Bets:
+
+Number Bet: Predict a specific number (0 to 36) where the ball will land.
+Color Bet: Predict whether the winning pocket will be red or black.
+
+
+
