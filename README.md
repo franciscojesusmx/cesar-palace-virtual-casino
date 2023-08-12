@@ -8,6 +8,8 @@
 
 -We will be adding a virtual coin system for betting, allowing players to place bets and earn rewards.
 
+-Roulette is unfinished 
+
 
 ---
 
