@@ -33,3 +33,21 @@ def is_black(card):
             return True
         else:
             return False
+        
+def red_black_main():
+    while True:
+        choice = input("Do you want to play? (yes/no): ").lower()
+        
+        if choice == "yes":
+            cards = create_cards()
+            card = get_card(cards)
+            
+            if is_red(card):
+                print("The card is red!")
+            else:
+                print("The card is black!")
+        elif choice == "no":
+            print("Thank you for playing!")
+            break
+        else:
+            print("Invalid choice. Please enter 'yes' or 'no'.")
