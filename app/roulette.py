@@ -8,18 +8,26 @@ def spin_roulette(roulette_list):
     return number
 
 def is_red(roulette_number):
+    print("The roulette number is", roulette_number)
     if roulette_number % 2 != 0:
-        print("The number in the roulette is red")
+        print("The number in the roulette is red, you win!")
+    else:
+        print("The number in the roulette isn't red, you lose")
 
 def is_black(roulette_number):
+    print("The roulette number is", roulette_number)
     if roulette_number % 2 == 0:
         print("The number in the roulette is black")
 
-roulette_list = generate_roulette()
-random_number = spin_roulette(roulette_list)
+def is_zero(roulette_number):
+    print("The roulette number is", roulette_number)
+    if roulette_number == 0:
+        print("The number in the roulette is 0 ")
 
-print("The roulette is spinning...")
-print("The number that came up is:", random_number)
-
-is_red(random_number)
-is_black(random_number)
+def choice_number(number, roulette_number):
+    print(f'The number in the roulette is {roulette_number}')
+    if number == roulette_number:
+        print("The number in the roulette is the same that you choice, you win!")
+    elif number != roulette_number:
+        print("The number in the roulette isn't the same that you choice, you lose!")
+    
