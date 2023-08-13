@@ -108,4 +108,8 @@ Number Bet: Predict a specific number (0 to 36) where the ball will land.
 Color Bet: Predict whether the winning pocket will be red or black.
 
 
+## Red or Black
+
+In this game, players are tasked with predicting whether the next card to be revealed by the dealer will be of red or black color. It's a straightforward betting game and relies entirely on chance, as there is no strategy that can influence the outcome of the dealt cards.
+
 
