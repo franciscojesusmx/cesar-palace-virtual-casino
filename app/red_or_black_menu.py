@@ -34,6 +34,6 @@ def red_or_black_menu():
             print("You win!")
         else:
             print("You lose!")
+    else:
+        print("Invalid choice")
 
-# Call the red_or_black_menu function to start the game
-red_or_black_menu()
