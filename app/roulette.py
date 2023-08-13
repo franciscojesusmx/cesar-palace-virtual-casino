@@ -22,7 +22,9 @@ def is_black(roulette_number):
 def is_zero(roulette_number):
     print("The roulette number is", roulette_number)
     if roulette_number == 0:
-        print("The number in the roulette is 0 ")
+        print("The number in the roulette is 0 you win ")
+    elif roulette_number != 0:
+        print("The number in the roulette isn't 0 you lose ")
 
 def choice_number(number, roulette_number):
     print(f'The number in the roulette is {roulette_number}')

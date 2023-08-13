@@ -8,20 +8,19 @@ def roulette_menu():
 
     choice = int(input("Choose an option: "))
 
-    
-
     if choice == 1:
+        roulette = generate_roulette()
+        roulette_number = spin_roulette(roulette)
         is_red(roulette_number)
-        roulette = generate_roulette()
-        roulette_number = spin_roulette(roulette)
+
     elif choice == 2:
+        roulette = generate_roulette()
+        roulette_number = spin_roulette(roulette)
         is_black(roulette_number)
-        roulette = generate_roulette()
-        roulette_number = spin_roulette(roulette)
     elif choice == 3:
-        is_zero(roulette_number)
         roulette = generate_roulette()
         roulette_number = spin_roulette(roulette)
+        is_zero(roulette_number)
     elif choice == 4:
         user_number = int(input("Choose a number between 0 and 36: "))
         roulette = generate_roulette()
